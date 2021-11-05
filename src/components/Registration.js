@@ -24,7 +24,7 @@ export default function Registration() {
             "password":pass
         };
         
-        const response = await axios.post("http://localhost:8080/user-register",userDetails).then((res)=>{
+        const response = await axios.post("https://mr-bms-backend.herokuapp.com/user-register",userDetails).then((res)=>{
             Swal.fire({
                 title: `<strong>${res.data.message}</strong>`,
                 icon: 'success',

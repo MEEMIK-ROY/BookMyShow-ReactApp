@@ -11,7 +11,7 @@ export default function AllMoviesFetch() {
     const [data,setData] = useState([]);
     useEffect(async () => {
         try {
-            const response = await axios.get('http://localhost:8080/movies');
+            const response = await axios.get('https://mr-bms-backend.herokuapp.com/movies');
             console.log(response);
             setData(response.data);
           } catch (error) {
@@ -21,7 +21,7 @@ export default function AllMoviesFetch() {
 
     // async function getMovies() {
     //     try {
-    //       const response = await axios.get('http://localhost:8080/movies');
+    //       const response = await axios.get('https://mr-bms-backend.herokuapp.com/movies');
     //       console.log(response);
     //     } catch (error) {
     //       console.error(error);

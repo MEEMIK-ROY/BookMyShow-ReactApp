@@ -13,7 +13,7 @@ export default function SingleMovieFetch() {
     const [singleData,setSingleData] = useState([]);
     useEffect(async () => {
         try {
-            const response = await axios.get(`http://localhost:8080/movie/${movid}`);
+            const response = await axios.get(`https://mr-bms-backend.herokuapp.com/movie/${movid}`);
             console.log(response);
             setSingleData([response.data]);
           } catch (error) {
